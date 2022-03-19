@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Basic Challenge</h2>
+
+<p>Menyaring data
+    Saringlah data berikut agar outputnya menjadi hanya orang-orang di bawah 21 tahun.
+    
+    </p>
+    <br><br>
+
+<br>
+<br>
+<br>
+<br>
+<br> </p>
+<script>
+
+var people = [
+{ id: 1, name: 'Udin', age: 12 },
+  { id: 2, name: 'Wati', age: 51 },
+  { id: 3, name: 'Budi', age: 34 },
+  { id: 4, name: 'Agus', age: 16 },
+  { id: 5, name: 'Sari', age: 19 },
+  { id: 6, name: 'Ririn', age: 21 }
+];
+var filltering =  people.filter(function(peopleon) {
+return peopleon.age <21;
+});
+filltering;
+
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+

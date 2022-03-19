@@ -1,0 +1,57 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Basic Challenge</h2>
+
+<p>Jumlah Karakter
+    Buatlah suatu script yang dapat menghitung jumlah karakter dari suatu input; dengan menggunakan prompt().
+<br><br>
+Contoh:
+<br>IInput: saya
+<br>Output: 4
+<br>
+<br>Input: lari pagi
+<br>Output: 9 </p>
+<script>
+
+
+function urut(a)
+{
+    var swapp;
+    var n = a.length-1;
+    var x=a;
+    do {
+        swapp = false;
+        for (var i=0; i < n; i++)
+        {
+            if (x[i] > x[i+1])
+            {
+               var temp = x[i];
+               x[i] = x[i+1];
+               x[i+1] = temp;
+               swapp = true;
+            }
+        }
+        n--;
+    } while (swapp);
+ return x; 
+}
+
+console.log(urut([1, 3, 4, 1, 201, 100, 4, 7, 42, 85, 12, 583, 13, 104, 31, 76, 49]));
+
+
+</script>
+
+</body>
+</html>
+
+
+
